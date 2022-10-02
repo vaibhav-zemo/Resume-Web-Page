@@ -1,10 +1,9 @@
 * {
     margin: 0px;
     padding: 0px;
+    
 }
-
 /* Navigation */
-
 #navi ul li {
     display: inline-block;
     margin: 25px 10px;
@@ -17,27 +16,29 @@
 
 #navi ul li a {
     text-decoration: none;
-    color: white;
+    color: rgb(255, 251, 251);
     transition: border-bottom 0.5s;
 }
-
+/* #navi ul li a:hover {
+    color: rgb(107, 170, 111);
+} */
 #navi #menu a:hover {
     color: lightgray;
     border-bottom: 1px solid white;
 }
-
 #navi h1 {
     text-align: center;
     color: white;
     margin-top: 55px;
     font-size: 50px;
 }
-
+/* #navi h1:hover {
+   color: rgb(135, 209, 150);
+} */
 #navi .logos {
     text-align: center;
     margin-top: 10px;
 }
-
 #navi .logos ul li a {
     box-sizing: border-box;
     font-size: 1.3rem;
@@ -45,11 +46,10 @@
     border-radius: 50%;
     padding: 10px;
 }
-
 .logos ul li a:hover {
-    box-shadow: 0px 0px 6px 4px white;
+    box-shadow: 0px 0px 6px 4px rgb(192, 183, 183);
+    font-size:larger ;
 }
-
 #navi::before {
     content: "";
     position: absolute;
@@ -59,7 +59,6 @@
     z-index: -1;
     opacity: .75;
 }
-
 #navi .myimg img {
     width: 200px;
     height: 200px;
@@ -67,46 +66,36 @@
     border: 2px solid white;
     box-shadow: 0px 0px 4px 3px white;
 }
-
 #navi .myimg {
     text-align: center;
 }
-
 /* About section */
-
 #about {
     margin-top: 30px;
     text-align: center;
     width: 100%;
 }
-
 #about p {
     display: inline-block;
     width: 80%;
 }
-
 #about strong {
     font-size: 1rem;
     color: blue;
 }
-
 /* Skill Section */
-
 #skill {
     width: 70%;
     height: auto;
     margin: 8rem auto;
 }
-
 #skill #heading {
     text-align: center;
 }
-
 #skill #heading #skill_logo {
     font-size: 40px;
     color: blue;
 }
-
 #skill #heading p {
     display: inline-block;
     font-size: 35px;
@@ -114,7 +103,6 @@
     color: blue;
     font-weight: bold;
 }
-
 .skills {
     display: flex;
     flex-direction: row;
@@ -122,7 +110,6 @@
     justify-content: center;
     margin-top: 4rem;
 }
-
 .skillprocess {
     width: 150px;
     height: 30px;
@@ -130,111 +117,89 @@
     border-radius: 20px;
     margin: 10px;
 }
-
 .skillname {
     height: inherit;
     border-radius: 20px 0px 0px 20px;
 }
-
 .blue {
-    background-color: blue;
+    background-color: rgb(64, 64, 75);
     width: 80%;
 }
-
 .red {
-    background-color: turquoise;
+    background-color: rgb(0, 216, 195);
     width: 60%;
 }
-
 .yellow {
-    background-color: tomato;
+    background-color: rgb(235, 117, 97);
     width: 90%;
 }
-
 .green {
     background-color: violet;
     width: 100%;
     border-radius: 20px;
 }
-
 .orange {
     background-color: chartreuse;
     width: 40%;
 }
-
 .violet {
     background-color: cyan;
     width: 50%;
 }
-
 .hp {
     background-color: limegreen;
     width: 66%;
 }
-
 span {
     padding-left: 10px;
     color: white;
     font-weight: bold;
 }
-
 /*Work Experience*/
-
 #work {
     margin: 5%;
     width: 90%;
 }
-
 #work_head {
     width: 25em;
     margin: 0px auto;
 }
-
 #work_head p {
     font-size: 2.5rem;
     display: inline-block;
     color: blue;
 }
-
 #work_head h2 {
     color: blue;
     font-size: 2.5em;
     margin-left: 1rem;
     display: inline-block;
 }
-
 .logo {
     width: 4em;
     height: 4em;
 }
-
 .items {
     position: relative;
 }
-
 .member {
     position: relative;
     margin: 6%;
     width: 40%;
     height: 25%;
 }
-
-
 .member .head {
     display: inline-block;
     text-align: right;
     margin-left: 55%;
     margin-bottom: 5%;
 }
-
 .member .head h3{
     margin-bottom: 4%;
 }
-
 .member:nth-child(2n) {
     left: 50%;
 }
-
 .timeline {
     position: absolute;
     width: 0px;
@@ -243,7 +208,6 @@ span {
     left: 50%;
     border: 2px dashed cyan;
 }
-
 .timeline p {
     color: blue;
     font-size: 1.7em;
@@ -252,8 +216,6 @@ span {
     top: 2%;
     z-index: 1;
 }
-
-
 .member:nth-child(2n)::before {
     content: '';
     display: inline-block;
@@ -266,7 +228,6 @@ span {
     border-radius: 50%;
     background: lightgray;
 }
-
 .member:nth-child(2n-1)::before {
     content: '';
     display: inline-block;
@@ -278,29 +239,21 @@ span {
     border-radius: 50%;
     background: lightgray;
 }
-
-
-
-
 /*Education*/
-
 #education {
     margin-top: 150px;
     position: relative;
     background: rgb(231, 231, 231);
     height: auto;
 }
-
 #education_logo {
     display: inline-block;
     color: blue;
     font-size: 40px;
 }
-
 #education_head {
     text-align: center;
 }
-
 #education_head h2 {
     display: inline-block;
     font-size: 35px;
@@ -308,9 +261,6 @@ span {
     color: blue;
     font-weight: bold;
 }
-
-
-
 #edu_member {
     padding: 5px;
     position: relative;
@@ -318,16 +268,13 @@ span {
     height: auto;
     /* border: 2px solid blue; */
 }
-
 #edu_member:nth-child(2n-1) {
     margin-left: 319px;
     margin-top: 35px;
 }
-
 #edu_member:nth-child(2n) {
     left: 55%;
 }
-
 #edu_member:nth-child(2n-1)::after {
     content: '';
     position: absolute;
@@ -335,11 +282,10 @@ span {
     width: 12px;
     height: 12px;
     border-radius: 50%;
-    right: -25.5%;
+    right: -15%;
     top: -2%;
     z-index: 1;
 }
-
 #edu_member:nth-child(2n)::before {
     content: '';
     position: absolute;
@@ -351,40 +297,33 @@ span {
     top: -2%;
     z-index: 1;
 }
-
 #edu_member .head {
     display: inline-block;
     margin-left: 4rem;
 }
-
 #edu_member .logo {
     display: inline-block;
     width: 40px;
     height: 40px;
 }
-
 #edu_member .head {
     /* text-align: right; */
     margin-bottom: 20px;
 }
-
 #edu_member .head h3 {
     display: inline-block;
     color: blue;
 }
-
 #edu_member .head div {
     margin-top: 8px;
     font-weight: bold;
     color: orangered;
 }
-
 #edu_member .head #date {
     margin-top: 0;
     font-weight: bold;
     color: gray;
 }
-
 .edu_timeline p {
     color: blue;
     font-size: 2rem;
@@ -393,7 +332,6 @@ span {
     top: 10%;
     z-index: 1;
 }
-
 .edu_timeline {
     padding: 0px;
     position: absolute;
@@ -403,9 +341,7 @@ span {
     top: 10%;
     right: 50%;
 }
-
 /*Portfoilo*/
-
 #portfolio .img_port {
     margin: 50px;
     padding: 50px;
@@ -415,36 +351,29 @@ span {
     justify-content: center;
     align-items: center;
 }
-
 #portfolio .head_port {
     text-align: center;
     font-size: 1.7rem;
     color: blue;
     margin-top: 7rem;
 }
-
 #portfolio h2 {
     display: inline-block;
 }
-
 #portfolio p {
     font-size: 2rem;
     display: inline-block;
     margin: 2rem;
 }
-
 #portfolio img {
     width: 300px;
     height: 300px;
 }
-
 /*Contact Us*/
-
 #contact {
     position: relative;
     ;
 }
-
 #contact .head_contact {
     color: blue;
     /* text-align: center; */
@@ -452,20 +381,17 @@ span {
     margin: auto;
     width: 300px;
 }
-
 #contact .head_contact p {
     display: inline-block;
     font-size: 40px;
     margin: 10px;
 }
-
 #contact .head_contact h2 {
     display: inline-block;
     font-size: 30px;
     width: 200px;
     margin: 10px;
 }
-
 #contact #form {
     display: flex;
     flex-direction: column;
@@ -475,7 +401,6 @@ span {
     margin: 0px 50px;
     margin-bottom: 20px;
 }
-
 #contact div {
     position: relative;
     /* ; */
@@ -483,27 +408,22 @@ span {
     margin-left: 20px;
     width: 100px;
 }
-
 #contact div:nth-child(5) {
     top: -440px;
     left: 55%;
 }
-
 #contact div:nth-child(4) {
     top: -140px;
     left: 55%;
 }
-
 #contact label {
     display: block;
 }
-
 #contact input, textarea {
     background: lightgray;
     border-radius: 20px;
     padding: 7px;
 }
-
 #contact #form .line {
     position: absolute;
     height: 300px;
@@ -512,12 +432,10 @@ span {
     top: 20%;
     border-left: 2px dashed white;
 }
-
 #contact #form .submit {
     position: absolute;
     top: 80%;
 }
-
 #contact #form .submit button {
     height: 30px;
     width: 65px;
